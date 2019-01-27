@@ -7,7 +7,7 @@ output:
 
 
 
-#Load the data
+# Load the data
 
 Process/transform the data (if necessary) into a format suitable for your analysis
 
@@ -37,7 +37,7 @@ head(data_act,10)
 ## 10    NA 2012-10-01       45
 ```
 
-#What is mean total number of steps taken per day?
+# What is mean total number of steps taken per day?
 
 For this part of the assignment, you can ignore the missing values in the dataset.
 Calculate the total number of steps taken per day
@@ -88,7 +88,7 @@ summary(total_day$total)
 ##      41    8841   10765   10766   13294   21194       8
 ```
 
-#What is the average daily activity pattern?
+# What is the average daily activity pattern?
 
 Make a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
 
@@ -118,7 +118,7 @@ mean_interval[which.max(mean_interval$mean),]
 ## 1      835  206.
 ```
 
-#Imputing missing values
+# Imputing missing values
 
 Note that there are a number of days/intervals where there are missing values (coded as NA). 
 Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NAs)
@@ -201,7 +201,7 @@ summary(total_day$total)
 ##      41    8841   10765   10766   13294   21194       8
 ```
 
-#Are there differences in activity patterns between weekdays and weekends?
+# Are there differences in activity patterns between weekdays and weekends?
 
 For this part the weekdays() function may be of some help here. Use the dataset with the filled-in missing values for this part.Create a new factor variable in the dataset with two levels - "weekday" and "weekend" indicating whether a given date is a weekday or weekend day.
 
